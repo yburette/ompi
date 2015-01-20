@@ -85,6 +85,8 @@ ompi_mtl_base_select(bool enable_progress_threads,
 
         ompi_mtl_base_selected_component = component;
         ompi_mtl = module;
+        /* We found a working component. Let's select it. */
+        break;
     }
 
     /* This base function closes, unloads, and removes from the
