@@ -294,7 +294,7 @@ AC_DEFUN([_OPAL_COMMON_LIBFABRIC_SETUP_LIBFABRIC_EXTERNAL],[
                        [opal_common_libfabric_happy=1],
                        [opal_common_libfabric_happy=0])
 
-     opal_common_libfabric_LIBADD="-lfabric"
+     opal_common_libfabric_LIBADD="-L${opal_libfabric_libdir} -lfabric"
 ])
 
 # --------------------------------------------------------
